@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/rashi-29/node_app#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "ibmcloud-appid": "^6.1.0",
+    "passport": "^0.4.1"
   }
 }
