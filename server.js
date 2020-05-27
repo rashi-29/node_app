@@ -28,6 +28,7 @@ passport.use(new WebAppStrategy({
 app.get('/appid/callback', passport.authenticate(WebAppStrategy.STRATEGY_NAME));
 
 app.get('/appid/logout', function(req, res){
+	res.clearCookie("refreshToken");
 	WebAppStrategy.logout(req);
 	res.redirect('/');
 });
